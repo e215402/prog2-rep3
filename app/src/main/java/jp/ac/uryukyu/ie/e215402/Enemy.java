@@ -55,15 +55,15 @@ public class Enemy {
     }
 
     /**
-     * 自身のnameを参照するgetter
-     * @return 自身のname
+     * nameを参照するgetter
+     * @return name
      */
     public String getName(){
         return name;
     }
 
     /**
-     * 自身のnameを設定するsetter
+     * nameを設定するsetter
      * @param newName 設定したいname
      */
     public void setName(String newName){
@@ -71,15 +71,15 @@ public class Enemy {
     }
 
     /**
-     * 自身のhitPointを参照するgetter
-     * @return 自身のhitPoint
+     * hitPointを参照するgetter
+     * @return hitPoint
      */
     public int getHitPoint(){
         return hitPoint;
     }
 
     /**
-     * 自身のhitPointを設定するsetter
+     * hitPointを設定するsetter
      * @param newHitPoint 設定したいhitPoint
      */
     public void setHitPoint(int newHitPoint){
@@ -87,15 +87,15 @@ public class Enemy {
     }
 
     /**
-     * 自身のattackを参照するgetter
-     * @return 自身のattack
+     * attackを参照するgetter
+     * @return attack
      */
     public int getAttack(){
         return attack;
     }
 
     /**
-     * 自身のattackを設定するsetter
+     * attackを設定するsetter
      * @param newAttack 設定したいattack
      */
     public void setAttack(int newAttack){
@@ -103,18 +103,18 @@ public class Enemy {
     }
 
     /**
-     * 自身のdeadを参照するgetter
-     * @return 自身のdead
+     * deadを参照するgetter
+     * @return dead
      */
-    public boolean isDead(){
+    public boolean youDead(){
         return dead;
     }
 
     /**
-     * 自身のdeadを設定するsetter
+     * deadを設定するsetter
      * @param newDead 設定したいdead
      */
-    public void setIsDead(boolean newDead){
+    public void setYouDead(boolean newDead){
         dead = newDead;
     }
 }
