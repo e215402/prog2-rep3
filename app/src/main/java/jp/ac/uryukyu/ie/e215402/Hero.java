@@ -9,10 +9,10 @@ package jp.ac.uryukyu.ie.e215402;
  * Created by tnal on 2016/11/13.
  */
 public class Hero {
-    public String name;
-    public int hitPoint;
-    public int attack;
-    public boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -35,7 +35,7 @@ public class Hero {
      */
     public void attack(Enemy e){
         int damage = (int)(Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.name, damage);
+        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.getName(), damage);
         e.wounded(damage);
     }
 
@@ -50,5 +50,68 @@ public class Hero {
             dead = true;
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
+    }
+    /**
+     * 自身のnameを参照するgetter
+     * @return 自身のname
+     */
+    public String getName(){
+        return name;
+    }
+
+    /**
+     * 自身のnameを設定するsetter
+     * @param newName 設定したいname
+     */
+    public void setName(String newName){
+        name = newName;
+    }
+
+    /**
+     * 自身のhitPointを参照するgetter
+     * @return 自身のhitPoint
+     */
+    public int getHitPoint(){
+        return hitPoint;
+    }
+
+    /**
+     * 自身のhitPointを設定するsetter
+     * @param newHitPoint 設定したいhitPoint
+     */
+    public void setHitPoint(int newHitPoint){
+        hitPoint = newHitPoint;
+    }
+
+    /**
+     * 自身のattackを参照するgetter
+     * @return 自身のattack
+     */
+    public int getAttack(){
+        return attack;
+    }
+
+    /**
+     * 自身のattackを設定するsetter
+     * @param newAttack 設定したいattack
+     */
+    public void setAttack(int newAttack){
+        attack = newAttack;
+    }
+
+    /**
+     * 自身のdeadを参照するgetter
+     * @return 自身のdead
+     */
+    public boolean isDead(){
+        return dead;
+    }
+
+    /**
+     * 自身のdeadを設定するsetter
+     * @param newDead 設定したいdead
+     */
+    public void setIsDead(boolean newDead){
+        dead = newDead;
     }
 }
